@@ -158,7 +158,7 @@ export default function App() {
       {IMAGES.map((img, idx) => (
         <div 
           key={idx}
-          className="absolute z-[2] pointer-events-none select-none uppercase whitespace-nowrap font-anton"
+          className="absolute z-[2] pointer-events-none select-none uppercase whitespace-nowrap font-display"
           style={{
             left: '4%',
             top: '18%',
@@ -229,7 +229,7 @@ export default function App() {
           </p>
           
           <h2
-            className="font-anton uppercase mb-3 sm:mb-4 leading-none"
+            className="font-display uppercase mb-3 sm:mb-4 leading-none"
             style={{ 
               fontSize: 'clamp(30px, 4vw, 56px)',
               color: IMAGES[activeIndex].textColor,
@@ -285,11 +285,21 @@ export default function App() {
           transition: 'color 650ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms' 
         }}
       >
-        <span className="font-anton text-[28px] sm:text-[48px] uppercase leading-none tracking-tight">
+        <span className="font-display text-[28px] sm:text-[48px] uppercase leading-none tracking-tight">
           EXPLORE GEAR
         </span>
         <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8" strokeWidth={2.25} />
       </a>
+
+      {/* Footer Credit */}
+      <div 
+        className="absolute left-1/2 bottom-[18px] -translate-x-1/2 text-[12px] font-medium tracking-[0.08em] opacity-65 hover:opacity-100 transition-opacity duration-250 z-[100] whitespace-nowrap select-none"
+        style={{
+          color: IMAGES[activeIndex].textColor === '#111111' ? 'rgba(17,17,17,0.75)' : 'rgba(255,255,255,0.75)'
+        }}
+      >
+        Created with <span className="text-red-500">❤</span> by Karar Haider
+      </div>
     </div>
   );
 }
