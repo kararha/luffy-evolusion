@@ -1,0 +1,6 @@
+{
+  "name": "Luffy Evolution Showcase",
+  "description": "A premium Monkey D. Luffy Evolution showcase carousel featuring cinematic lighting and bold typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
